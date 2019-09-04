@@ -1,0 +1,90 @@
+.header {
+  width: 100%;
+  height: 53px;
+  position: fixed;
+  top: 0;
+  user-select: none;
+  background-color: rgba(215, 77, 69, 1);
+  //   color: rgb(255, 202, 198);
+  color: #f5d4d9;
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .left {
+    min-width: 260px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+      width: 80px;
+      font-family: 华文行楷, sans-serif;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .nav {
+      width: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      span {
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 3px;
+        display: flex;
+
+        &:hover {
+          background-color: rgba(202, 72, 65, 1);
+        }
+      }
+    }
+
+  }
+
+  .right {
+    @extend .left;
+
+    .search {
+      width: 170px;
+      border-radius: 3px;
+      background-color: rgba(219, 219, 219, 0.2);
+      display: flex;
+      align-items: center;
+
+      span {
+        padding: 0 5px 0 8px;
+        display: flex;
+      }
+
+      input {
+        font-size: 13px;
+        height: 26px;
+        border-radius: 3px;
+        color: #f5d4d9;
+        background-color: rgba(219, 219, 219, 0);
+
+        &::placeholder {
+          color: #f5d4d9;
+        }
+      }
+    }
+
+    .skin {
+      padding: 5px;
+      border-radius: 100px;
+      cursor: pointer;
+      display: flex;
+
+      &:hover {
+        background-color: rgba(202, 72, 65, 1);
+      }
+    }
+  }
+}
